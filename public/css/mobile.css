@@ -1,0 +1,119 @@
+
+
+body{
+	margin: 10px 0px 0px 0px;
+	background-color: rgba(128, 128, 128, 0.16);
+}
+
+#cabecalho{
+	width: 100%;
+	background-color: #6767a9;
+	min-height: 40px;
+	max-height: 70px;	
+	margin-bottom: 10px;	
+}
+
+#corpo{
+	width: 100%;
+	float: left;
+	height: 100%;
+	position: relative;
+}
+
+#content{
+	width: auto;
+    height: auto;
+    margin-left: 2%;
+}
+
+.divMoeda{
+	
+	min-height: 300px;
+    max-height: 500px;
+    min-width: 300px;
+    max-width: 350px;
+    margin-left: 0px;
+    float: none;
+
+}
+
+.valor_moeda{
+
+	width: 100%;
+	float: left;
+}
+
+.moeda{
+	
+	min-height: 70px;
+	min-width: 70px;
+	max-height: 100px;
+	max-width: 100px;	
+	/*padding-left: 10%; */
+}
+
+.text_valor{
+
+	background: transparent;
+	border: 0;
+    color: #909090;
+    font-family: Tahoma;
+    font-size: 1em;
+    text-align: left;
+    float: left;
+    width: 70%;
+    
+}
+
+.line{
+	width: 100%;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.simbolo{
+	background: transparent;
+	border: 0;
+    color: #909090;
+    font-family: Tahoma;
+    font-size: 1em;
+    float: left;	
+    min-width: 80px;
+    max-width: 120px;
+}
+
+#dt_fechamento{
+    font-family: Tahoma;    
+    float: right;
+    margin: 12px;    
+    color: white;
+}
+
+.especificacao_moeda{
+	color: #909090;
+    font-family: tahoma;
+    font-size: xx-large;
+    padding-left: 20%;
+}
+
+
+#load{
+	color: #909090;
+    font-family: tahoma;
+	font-size: xx-large;
+	height: auto;
+    width: auto;
+    margin-left: 28%;
+    margin-top: 10%;
+}
+
+#load div#buscando{
+	width: auto;
+    float: left;
+}
+
+#load div#marquee{
+	width: auto;
+    float: left;
+}
+

@@ -1,0 +1,14 @@
+.divExemplo{
+
+	white-space: pre;
+	min-height: 300px;
+	max-height: 550px;
+	min-width: 300px;
+	max-width: 550px;
+	margin-left: 20px;
+	
+}
+
+h1, h3{
+	text-align: center;
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<head>
+	<title>Cotações</title>
+	<link rel="icon" href="./img/icon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>	
+	<script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>	
+	<script type="text/javascript" src="js/indexV2.js"></script>	
+	<link rel="stylesheet" href="./css/indexV2.css"/>		
+	<link rel="stylesheet" href="./css/mobile.css" media="(max-width: 720px)"/>		
+	
+</head>
+<body>
+	<div id="cabecalho" >
+		<input type="button" id='bt_modal' value="Calcular" />
+		<div id="dt_fechamento">
+			<span class="att">Ultimo fechamento : </span>
+			<span class="att" id="att"></span>
+		</div>
+	</div>
+	<div id="divisor_head"></div>
+	<div id="corpo">			
+	  <div id="content">
+		<div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/D%C3%B3lar_dos_Estados_Unidos" target="_blank">
+					<img class="moeda" src="./img/moeda_dolar_new.gif" />
+				</a>	
+				<span class="especificacao_moeda">Dolar - USD</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">					
+					<span class="simbolo">Compra</span>
+					<input type="text" id="dolar-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="dolar-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="dolar-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		</div>
+
+		<div class='divMoeda'>				
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Euro" target="_blank">
+					<img class="moeda" src="./img/moeda_euro.gif" />		
+				</a>
+				<span class="especificacao_moeda">Euro - EUR</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">					
+					<span class="simbolo">Compra</span>
+					<input type="text" id="euro-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="euro-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="euro-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		</div>
+
+		<div class='divMoeda'>					
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Libra_esterlina" target="_blank">
+					<img class="moeda" src="./img/moeda_libra.gif" />			
+				</a>
+				<span class="especificacao_moeda">Libra - GBP</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">					
+					<span class="simbolo">Compra</span>
+					<input type="text" id="libra-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="libra-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="libra-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		</div>
+
+
+		<div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Franco_su%C3%AD%C3%A7o" target="_blank">
+					<img class="moeda" src="./img/moeda_francosuico.gif" />		
+				</a>
+				<span class="especificacao_moeda">Franco - CHF</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">
+					<span class="simbolo">Compra</span>
+					<input type="text" id="fSuico-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="fSuico-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="fSuico-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		  </div>
+
+
+		<div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/D%C3%B3lar_canadense" target="_blank">
+					<img class="moeda" src="./img/moeda_dolarCanadense.gif" />
+				</a>	
+				<span class="especificacao_moeda">Dolar Can - CAD</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">					
+					<span class="simbolo">Compra</span>
+					<input type="text" id="dolarCad-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="dolarCad-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="dolarCad-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		</div>
+
+		<div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/D%C3%B3lar_australiano" target="_blank">
+					<img class="moeda" src="./img/moeda_dolarAustraliano.gif" />
+				</a>	
+				<span class="especificacao_moeda">Dolar Aus - AUD</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">					
+					<span class="simbolo">Compra</span>
+					<input type="text" id="dolarAus-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="dolarAus-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="dolarAus-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		</div>
+
+		 <div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Peso_argentino" target="_blank">
+					<img class="moeda" src="./img/moeda_pesoargentino.gif" />		
+				</a>
+				<span class="especificacao_moeda">Peso A - ARS</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">
+					<span class="simbolo">Compra</span>
+					<input type="text" id="pArgentino-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="pArgentino-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="pArgentino-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		  </div>
+		
+		<div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Peso_chileno" target="_blank">
+					<img class="moeda" src="./img/moeda_pesochileno.gif" />		
+				</a>
+				<span class="especificacao_moeda">Peso Ch - CLP</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">
+					<span class="simbolo">Compra</span>
+					<input type="text" id="pChileno-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="pChileno-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="pChileno-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		  </div>
+
+		 <div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Coroa_dinamarquesa" target="_blank">
+					<img class="moeda" src="./img/moeda_coroanodinamarquesa.gif" />		
+				</a>
+				<span class="especificacao_moeda">Coroa D - DKK</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">
+					<span class="simbolo">Compra</span>
+					<input type="text" id="cDinamarquesa-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="cDinamarquesa-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="cDinamarquesa-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		  </div>
+
+		  <div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Coroa_norueguesa" target="_blank">
+					<img class="moeda" src="./img/moeda_coroanorueguesa.gif" />		
+				</a>
+				<span class="especificacao_moeda">Coroa N - NOK</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">
+					<span class="simbolo">Compra</span>
+					<input type="text" id="cNorueguesa-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="cNorueguesa-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="cNorueguesa-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		  </div>
+
+		  <div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Iene" target="_blank">
+					<img class="moeda" src="./img/moeda_iene.gif" />		
+				</a>
+				<span class="especificacao_moeda">Iene - JPY</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">
+					<span class="simbolo">Compra</span>
+					<input type="text" id="iene-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="iene-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="iene-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		  </div>
+
+		   <div class='divMoeda'>	
+			<div class="divimg">
+				<a href="https://pt.wikipedia.org/wiki/Renminbi" target="_blank">
+					<img class="moeda" src="./img/moeda_renminbi.gif" />		
+				</a>
+				<span class="especificacao_moeda">Yuan - CNY</span>
+			</div>
+			<div class="valor_moeda">
+				<hr/>
+				<div class="line">
+					<span class="simbolo">Compra</span>
+					<input type="text" id="renminbi-compra" class="text_valor" readonly="readonly" value="" />
+				</div>
+				<div class="line">
+					<span class="simbolo">Venda</span>
+					<input type="text" id="renminbi-venda" class="text_valor" readonly="readonly" value="" />
+				</div>	
+				<div class="line">
+					<span class="simbolo">Valores</span>
+					<input type="text" id="renminbi-valor" class="text_valor" readonly="readonly" value="" />
+				</div>	
+			</div>		
+		  </div>
+
+		</div>	
+	</div>
+
+
+	<div id="convertMoedaModal" style="display:none">
+		<div id="content_select" class="separar">
+		<div id="content_convert-first">
+			<select id="select_moeda" >
+				<option value="">Coroa D</option>
+				<option value="">Coroa N</option>
+				<option value="">Dolar Aus</option>	
+				<option value="">Dolar Can</option>	
+				<option value="" selected="selected">Dolar</option>				
+				<option value="">Franco Suic</option>			
+				<option value="">Iene</option>			
+				<option value="">Libra</option>		
+				<option value="">Peso Arg</option>		
+				<option value="">Peso Ch</option>		
+				<option value="">Yuan</option>		
+				<option value="">Euro</option>	
+				<option value="1">Real</option>		
+			</select> 
+		</div>
+			<button id="invert">
+				<img src="./img/icone_troca.gif" id="ico-troca"/>
+			</button>
+		<div id="content_convert-second">
+			<select id="select_moeda2" >
+				<option value="">Coroa D</option>
+				<option value="">Coroa N</option>
+				<option value="">Dolar Aus</option>	
+				<option value="">Dolar Can</option>	
+				<option value="">Dolar</option>				
+				<option value="">Franco Suic</option>			
+				<option value="">Iene</option>			
+				<option value="">Libra</option>		
+				<option value="">Peso Arg</option>		
+				<option value="">Peso Ch</option>		
+				<option value="">Yuan</option>		
+				<option value="" selected="selected">Euro</option>	
+				<option value="1">Real</option>					
+			</select> 
+		 </div>
+		</div>
+		<div id="content_inputs" class="separar">
+			<div id='content_input_first'>
+				<input type="text" id="moeda_selecioanda"/>
+			</div>			
+			<div id='content_input_second'>
+				<input type="text" id="moeda_destino" readonly="readonly" />
+			</div>
+		</div>
+		<button type="button" class="ui-button ui-corner-all ui-widget" id="bt_calc">Calcular</button>
+
+	</div>
+
+
+	
+
+
+
+</body>
+</html>

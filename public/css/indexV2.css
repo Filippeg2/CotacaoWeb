@@ -1,0 +1,239 @@
+
+
+html{
+	overflow: scroll;
+}
+
+body{
+	margin: 10px 0px 0px 0px;
+	background-color: rgba(128, 128, 128, 0.16);
+}
+
+#cabecalho{
+	width: 100%;
+	background-color: #6767a9;
+	min-height: 40px;
+	max-height: 70px;	
+	margin-bottom: 10px;	
+	position: fixed;
+	margin-top: -10px;
+}
+
+#divisor_head{
+	width: 100%;	
+	min-height: 40px;
+	max-height: 70px;	
+	margin-bottom: 10px;		
+
+}
+
+#corpo{
+	width: 100%;
+	float: left;
+	height: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+#content{
+	width: auto;
+    height: auto;
+    margin-left: 2%;
+}
+
+.divMoeda{
+	
+	min-height: 300px;
+	max-height: 550px;
+	min-width: 300px;
+	/*max-width: 550px;*/
+	width: 40%;
+	margin-left: 90px;
+	float: left;
+	display: none;
+
+}
+
+
+.valor_moeda{
+
+	width: 100%;
+	float: left;
+}
+
+.moeda{
+	
+	min-height: 70px;
+	min-width: 70px;
+	max-height: 100px;
+	max-width: 100px;	
+	/*padding-left: 10%; */
+}
+
+.text_valor{
+
+	background: transparent;
+	border: 0;
+    color: #909090;
+    font-family: Tahoma;
+    font-size: 1em;
+    text-align: left;
+    float: left;
+    width: 70%;
+    
+}
+
+.line{
+	width: 100%;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.simbolo{
+	background: transparent;
+	border: 0;
+    color: #909090;
+    font-family: Tahoma;
+    font-size: 1em;
+    float: left;	
+    min-width: 80px;
+    max-width: 120px;
+}
+
+#dt_fechamento{
+    font-family: Tahoma;    
+    float: right;
+    margin: 12px;    
+    color: white;
+    display: none;
+}
+
+.especificacao_moeda{
+	color: #909090;
+    font-family: tahoma;
+    font-size: xx-large;
+    padding-left: 20%;
+    white-space: nowrap;
+}
+
+.divimg{
+	white-space: nowrap;
+}
+
+#load{
+	color: #909090;
+    font-family: tahoma;
+	font-size: xx-large;
+	height: auto;
+    width: auto;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#load div#buscando{
+	width: auto;
+    float: left;
+}
+
+#load div#marquee{
+	width: auto;
+    float: left;
+}
+
+a:link    {background-color:transparent; text-decoration:none;}
+a:visited {background-color:transparent; text-decoration:none;}
+a:hover   {background-color:transparent; text-decoration:none;}
+a:active  {background-color:transparent; text-decoration:none;}
+
+.prob{
+	font-family: tahoma;
+    color: #909090;
+    font-size: xx-large;
+}	
+
+
+#bt_modal{
+
+	float: left;
+    margin: 7px;
+    height: 2em;
+    color: white;
+    background-color: #6767a9;
+    border: none;
+    cursor : pointer;
+
+}
+
+
+#convertMoedaModal{
+
+	
+
+}
+
+.separar{
+
+	margin-bottom: 50px;
+}
+
+#content_select{
+
+	
+}
+
+    
+
+#content_convert-first{
+	
+	float: left;
+   /* width: 40%;*/
+    margin-right: 2%;
+}
+
+#content_convert-second{
+	
+	float: right;
+
+}
+
+#moeda_selecioanda{
+	
+	float: left;
+	width: 40%;
+}
+
+#moeda_destino{
+	float: right;
+	width: 40%;
+}
+
+#bt_calc{
+
+	margin-top: 30px;
+	float: right;
+}
+
+#invert{
+
+	border: none;
+	background: none;
+	outline: none;
+}
+#ico-troca{
+	
+	width: 25px;
+    height: 20px;
+
+}
+
+/*Customizar o scroll*/
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "cotacaoweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "express": "^4.14.1",
+    "mongodb": "^2.2.22",
+    "request": "^2.79.0"
+  }
+}
